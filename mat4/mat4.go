@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/rkusa/gm/math32"
-	"github.com/rkusa/gm/vec3"
+	"github.com/neurlang/gm/math32"
+	"github.com/neurlang/gm/vec3"
 )
 
 type Mat4 [16]float32
