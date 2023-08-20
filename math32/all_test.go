@@ -9,8 +9,6 @@ package math32_test
 
 import (
 	"testing"
-
-	. "./"
 )
 
 var vf = []float32{
