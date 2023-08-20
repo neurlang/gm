@@ -1,6 +1,6 @@
 package vec4
 
-import "github.com/rkusa/gm/math32"
+import "github.com/neurlang/gm/math32"
 
 // Len returns the vector length.
 func (lhs *Vec4) Len() float32 {
