@@ -3,8 +3,6 @@ package math32_test
 import (
 	"math"
 	"testing"
-
-	. "./"
 )
 
 // benchmark results will be stored in this package level variable to avoid
