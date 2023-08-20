@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rkusa/gm/mat4"
+	"github.com/neurlang/gm/mat4"
 )
 
 func TestNew(t *testing.T) {
