@@ -1,6 +1,6 @@
 package mat3
 
-import "github.com/rkusa/gm/mat4"
+import "github.com/neurlang/gm/mat4"
 
 type Mat3 [9]float32
 
