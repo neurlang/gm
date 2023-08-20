@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rkusa/gm/math32"
-	"github.com/rkusa/gm/vec3"
+	"github.com/neurlang/gm/math32"
+	"github.com/neurlang/gm/vec3"
 )
 
 func TestNew(t *testing.T) {
