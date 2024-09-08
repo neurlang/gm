@@ -1,5 +1,11 @@
+#include "textflag.h"
+
 // func Sin(x float32) float32
-TEXT ·Sin(SB), NOSPLIT, $0-4
-    FMOVS S0, S0        // Load the input float x into S0
-    FSIN S0, S0         // Perform sin operation
-    RET                 // Return the result in S0
+TEXT ·Sin(SB), NOSPLIT, $0-8
+    // Load the float32 argument into register S0
+    FMOVS S0, S0
+    // Call the Go math function for sine
+    MOVD  S0, R0
+    BL    ·math.Sin(SB)
+    FMOVS S0, S0
+    RET
