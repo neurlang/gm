@@ -1,7 +1,7 @@
 #include "textflag.h"
 
 // func Sqrt(x float32) float32
-TEXT ·Sqrt(SB), NOSPLIT, $0-4
+TEXT ·Sqrt(SB), NOSPLIT, 4-4
     // Load argument (float32 x) from stack into S0
     MOVW x+0(FP), R0
     FMOVS R0, S0  // Move from general-purpose register R0 to floating-point register S0
@@ -17,5 +17,5 @@ TEXT ·Sqrt(SB), NOSPLIT, $0-4
     RET
 
 // Declare argument and return symbol offsets
-DATA x+0(SB)/4, $0
-DATA ret+0(SB)/4, $0
+GLOBL x+0(SB), 4, $0
+GLOBL ret+0(SB), 4, $0
